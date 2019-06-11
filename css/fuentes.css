@@ -1,0 +1,24 @@
+/* Documento de Fuentes */
+
+@font-face {
+	font-family: 'BebasN';
+	src: url('../fuentes/BebasNeue/BebasNeue Regular.otf');
+}
+
+@font-face {
+  font-family: 'ITC-Book';
+  src: url('');
+	src: url('?#iefix') format('embedded-opentype'), 
+	     url('') format('woff'), 
+	     url('../Fuentes/ITC/ITC Avant Garde Book (True Type).ttf') format('truetype'),
+	     url('#ITC Avant Garde Gothic') format('svg');
+}
+       
+@font-face {
+   font-family: 'ITC-Demi';
+   src: url('');
+ 	src: url('?#iefix') format('embedded-opentype'), 
+ 	     url('') format('woff'), 
+ 	     url('../Fuentes/ITC/ITC Avant Garde Demi (True Type).ttf') format('truetype'),
+ 	     url('#ITC Avant Garde Gothic') format('svg');
+}
