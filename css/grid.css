@@ -83,6 +83,12 @@ a, a:hover{
 				 1px -1px 0 lightgray, -1px 1px 0 lightgray;
 }
 
+h2{
+	display: block;
+	font-size: 30px;
+	text-align: center;
+}
+
 .fab, .fas{
 	color: blue;
 }
