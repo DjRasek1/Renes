@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/grid.css">
-	<title>Rene's Postal Service</title>
+	<title>Rene's Postal Service - Registro</title>
 </head>
 <body>
 	<div class="contenedor">
@@ -32,7 +32,7 @@
 				<!-- **Inicia Segundo Dropdown** -->
 				
 		<div class="nav">
-			<div class="dropdown text-center">
+			<div class="dropdown">
 				<div type="link" class="nav1 dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="false">busqueda de paquetes
 				</div>
 
@@ -42,29 +42,87 @@
 					<li class="dropdown-submenu">
 						<a href="#" class="nav1 dropdown-item" tabindex="-1"><i class="fas fa-caret-left"></i>&nbsp;&nbsp;Recibidos</a>
 						<ul class="dropdown-menu">
-							<li class="nav2 dropdown-item"><a href="#" tabindex="-1">Por Cajon</a></li>
-							<li class="nav2 dropdown-item"><a href="#">Por Nombre</a></li>
-							<li class="nav2 dropdown-item"><a href="#">Por Tracking</a></li>
-							<li class="nav2 dropdown-item"><a href="#">Por Fecha</a></li>
+							<li class="nav2 dropdown-item"><a href="#rCajon" data-toggle="collapse" aria-expanded="true" tabindex="-1">Por Cajon</a></li>
+							<li class="nav2 dropdown-item"><a href="#rNombre" data-toggle="collapse">Por Nombre</a></li>
+							<li class="nav2 dropdown-item"><a href="#rTracking" data-toggle="collapse">Por Tracking</a></li>
+							<li class="nav2 dropdown-item"><a href="#rFecha" data-toggle="collapse">Por Fecha</a></li>
 						</ul>
 					</li>
 						<!-- **Segundo Item** -->
 					<li class="dropdown-submenu">
 						<a href="#" class="nav1 dropdown-item" tabindex="-1"><i class="fas fa-caret-left"></i>&nbsp;&nbsp;Entregados</a>
 						<ul class="dropdown-menu">
-							<li class="nav2 dropdown-item"><a href="#" tabindex="-1">Por Cajon</a></li>
-							<li class="nav2 dropdown-item"><a href="#">Por Fecha</a></li>
+							<li class="nav2 dropdown-item"><a href="#eCajon" data-toggle="collapse" tabindex="-1">Por Cajon</a></li>
+							<li class="nav2 dropdown-item"><a href="#eFecha" data-toggle="collapse">Por Fecha</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</div>
 
+						<!-- ** Menu Lateral **-->
 
-		<div class="datos">
+		<div class="datos" id="datos">
+			<a href="#cCajon" data-toggle="collapse" class="">con Cajon</a>
+			<br>
+			<a href="#sCajon" data-toggle="collapse" class="">sin Cajon</a>
+			
 		</div>
-		<div class="imagen"><img src="img/casillas.png" alt="casillas" class="img"></div>
-		<div class="info">
+
+						<!-- ** Formulario ** -->
+
+		<div class="formulario" id="formulario">
+			<h3 class="well text-center">Registro de paquetes</h3>
+				<form action="" >
+
+							<!-- ** Con Cajon **-->
+
+					<div class="form-group collapse show" id="cCajon" data-parent="#formulario">
+						<h2>Registro de paquetes CON cajon</h2><br>
+						<label for="cajon">Cajon:&nbsp;</label>
+						<input type="text" placeholder="Numero de Cajon" class="form-control-sm" /><br><br>
+						<label for="cajon">Tracking:&nbsp;</label>
+						<input type="text" placeholder="Numero de Tracking" class="form-control-sm" /><br><br>
+						<label for="cajon">Propietario:&nbsp;</label>
+						<input type="text" placeholder="Nombre del Propietario" class="form-control-sm" /><br><br>
+						<label for="cajon">Tipo:&nbsp;</label>
+						<input type="text" placeholder="Tipo de Paquete" class="form-control-sm" /><br><br>
+						<label for="cajon">Precio:&nbsp;</label>
+						<input type="text" placeholder="Precio del Paquete" class="form-control-sm" /><br><br>
+						<button class="btn btn-primary">guardar</button>
+					</div>
+
+							<!-- ** Entregados ** -->
+
+					<div class="form-group collapse" id="sCajon" data-parent="#formulario">
+						<h2>Registro de paquetes SIN Cajon</h2><br>
+						<label for="cajon">Tracking:&nbsp;</label>
+						<input type="text" placeholder="Numero de Tracking" class="form-control-sm" /><br><br>
+						<label for="cajon">Propietario:&nbsp;</label>
+						<input type="text" placeholder="Nombre del Propietario" class="form-control-sm" /><br><br>
+						<label for="cajon">Tipo:&nbsp;</label>
+						<input type="text" placeholder="Tipo de Paquete" class="form-control-sm" /><br><br>
+						<label for="cajon">Precio:&nbsp;</label>
+						<input type="text" placeholder="Precio del Paquete" class="form-control-sm" /><br><br>
+						<button class="btn btn-primary">guardar</button>
+					</div>
+					
+				</form><br><br>
+
+				<div class="table-info">
+					<table class="table text-center">
+						<tr>
+							<th>Devuelve resultados de busqueda</th>
+						</tr>
+						<tr>
+							<td>resultado 1</td><td>resultado 1</td>
+						</tr>
+						<tr>
+							<td>resultado 2</td><td>resultado 2</td>
+						</tr>
+					</table>
+				</div>
+		</div>
 				
 					<!-- Empieza Pie de Pagina -->
 
